@@ -1,0 +1,170 @@
+<html lang="pl_PL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Moja strona</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Arek\Desktop\index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="main-nav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right text-uppercase  bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+           Menu
+
+         </button>
+         <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto font-weight-bold text-white rounded">
+            <li class="nav-item mx-0 mx-lg-2">
+              Moje portfolio
+            </li>
+            <li class="nav-item mx-0 mx-lg-3">
+              O mnie
+            </li>
+            <li class"nav-item mx-0 mx-lg-3">
+              Kontakt
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="masthead bg-dark text-white text-center" id="header">
+        <div class="container">
+          <img src="zdjecie.png" class="rounded border-2">
+          <hr class="star-light">
+          <h1 class="text-uppercase mb-0">Arkadiusz Szczęch</h1>
+          <h5 class"font-weight-light mb-0">Strony internetowe, pozycjonowanie stron</h5>
+        </div>
+      </header>
+      <section class="portfolio bg-secondary " id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-white text-uppercase bg-secondary  mb-0">Portfolio</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <div class="hovereffect">
+              <img src="portfolio1.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <div class="hovereffect">
+              <img src="portfolio2.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <div class="hovereffect">
+              <img src="portfolio3.png" alt="">
+            </div>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section class="bg-dark text-white mb-0" id="o-mnie">
+     <div class="container">
+       <h2 class="text-center text-uppercase text-white">O mnie</h2>
+       <hr class="star-light mb-5">
+       <div class="row">
+         <div class="col-lg-6 ml-auto">
+           <p class="lead text-justify">Aktualnie jestem studentem dugiego roku informatyki i ekonometrii na Uniwersytecie Rzeszowskim.
+           Projektowaniem stron zainteresowałem się w zeszłym roku. Prywatnie lubię dobre kino oraz muzyczne klasyki. Wielki fan angielskiej
+           Premier League, wieloletni kibic Chelsea, który sam kiedyś próbował sił w kopaniu piłki.</p>
+         </div>
+         <div class="col-lg-6 mr-auto">
+           <p class="lead text-justify">Technologie, którymi się posługuje to aktualnie html5, css3 oraz podstawy JavaScript i XML. Nieobcy
+           jest mi również framework Bootsrap. Oprócz samgo projektowania stron posługuję się także programami graficznymi, takimi jak
+            Adobe Photoshop, CorelDraw czy Adobe Illustrator.</p>
+         </div>
+       </div>
+     </section>
+     <section id="kontakt">
+     <div class="container">
+       <h2 class="text-center text-uppercase text-dark mb-0">Napisz do mnie</h2>
+       <hr class="star-dark mb-5">
+       <div class="row">
+         <div class="col-lg-8 mx-auto">
+           <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Imię</label>
+                  <input class="form-control" id="imie" type="text" placeholder="Imię" required="required" data-validation-required-message="Podaj swoje imię">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Email</label>
+                  <input class="form-control" id="email" type="email" placeholder="Adres email" required="required" data-validation-required-message="Podaj swój adres Email">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Telefon</label>
+                  <input class="form-control" id="telefon" type="tel" placeholder="Numer telefonu" required="required" data-validation-required-message="Podaj swój numer telefonu kontaktowego">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Treść</label>
+                  <textarea class="form-control" id="tresc" rows="5" placeholder="Treść wiadomości" required="required" data-validation-required-message="Wpisz treść swojej wiadomości"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="wyslij"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-dark btn-xl " id="sendMessageButton">Wyślij</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="star-light">
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Adres</h4>
+            <p class="lead mb-0">ul.Kowalskiego 21/37
+              <br>35-508, Rzeszów</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Kontakt</h4>
+            <p class="lead mb-0">tel: 555678459
+              <br>email: szczech40@gmail.com</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Ja w sieci</h4>
+            <span class="glyphicons glyphicons-search ">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-google-plus"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+
+
+          </span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <div class="container text-center">
+        <small>Copyright &copy; Arek Szczęch 2018</small>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
